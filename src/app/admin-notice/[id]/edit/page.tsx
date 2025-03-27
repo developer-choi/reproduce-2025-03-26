@@ -24,8 +24,12 @@ export default function Page() {
   }, [push, refresh]);
   
   return (
-    <form onSubmit={onSubmit}>
-      <button style={{padding: '16px 48px', color: 'white', backgroundColor: 'purple', fontWeight: 'bold'}}>Form submit</button>
-    </form>
+    <>
+      <h1>Edit admin-notice page</h1>
+      <form onSubmit={onSubmit}>
+        <input style={{height: 47}} placeholder="  notice title"/>
+        <button style={{padding: '16px 48px', color: 'white', backgroundColor: 'purple', fontWeight: 'bold'}}>Save</button>
+      </form>
+    </>
   );
 }

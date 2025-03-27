@@ -6,6 +6,7 @@ export default async function Page() {
 
   return (
     <div>
+      <h1>admin-notice list page</h1>
       <ul>
         {list.map(item => (
           <li key={item.id} style={{paddingBlock: 16}}>
